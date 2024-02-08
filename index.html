@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>kd15</title>
+        <link rel="stylesheet" href="./index.css" type="text/css" />
+
+        <script>
+            // function changeImage() {
+            //     var image = document.getElementById('sceneryImage');
+            //     image.src = './pictures/1.jpg';
+            // }
+
+            var imagesSet1 = ['./pictures/0.jpg', './pictures/1.jpg', './pictures/2.jpg'];
+            var imagesSet2 = ['./pictures/3.jpg', './pictures/4.jpg', './pictures/5.jpg'];
+            var imagesSet3 = ['./pictures/6.jpg', './pictures/7.jpg', './pictures/8.jpg'];
+            var imagesSet4 = ['./pictures/9.jpg', './pictures/10.jpg'];
+            var indexSet1 = 0;
+            var indexSet2 = 0;
+            var indexSet3 = 0;
+            var indexSet4 = 0;
+
+            function changeImage1() {
+                var image = document.getElementById('sceneryImage1');
+                var description = document.getElementById('imageDescription1');
+                image.src = imagesSet1[indexSet1];
+                description.textContent = '富士山の遠景';
+                indexSet1 = (indexSet1 + 1) % imagesSet1.length;
+            }
+
+            function changeImage2() {
+                var image = document.getElementById('sceneryImage2');
+                var description = document.getElementById('imageDescription2');
+                image.src = imagesSet2[indexSet2];
+                description.textContent = '富士山の桜';
+                indexSet2 = (indexSet2 + 1) % imagesSet2.length;
+            }
+
+            function changeImage3() {
+                var image = document.getElementById('sceneryImage3');
+                var description = document.getElementById('imageDescription3');
+                image.src = imagesSet3[indexSet3];
+                description.textContent = '富士山の温泉';
+                indexSet3 = (indexSet3 + 1) % imagesSet3.length;
+            }
+
+            function changeImage4() {
+                var image = document.getElementById('sceneryImage4');
+                var description = document.getElementById('imageDescription4');
+                image.src = imagesSet4[indexSet4];
+                description.textContent = '富士山の伝統';
+                indexSet4 = (indexSet4 + 1) % imagesSet4.length;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>富士山</h1>
+            <hr />
+            <h4>日本の象徴的な山</h4>
+            <img id="sceneryImage1" src="./pictures/0.jpg" alt="富士山">
+            <div class="image-description" id="imageDescription1">富士山の遠景</div>
+            <p>
+                <span
+                    class="bold bigsize">日本</span>において、自然美と歴史的な価値を兼ね備えた場所として、<span
+                    class="bold green">富士山</span>は特に特筆すべき存在です。この山は、
+                    日本の文化や芸術において永遠のテーマとして描かれ、多くの人々に愛されています。<span
+                    class="bold red underline">標高3,776メートル</span>を誇る<span
+                    class="bold green">富士山</span>は、<span
+                    class="bold red underline">世界遺産</span>として登録され、周辺の自然風景と共に訪れる人々を魅了しています。
+            </p>
+            <button onclick="changeImage1()">もっと見る</button>
+
+            <hr />
+
+            <h2>#1</h2>
+            <img id="sceneryImage2" src="./pictures/3.jpg" alt="富士山の桜">
+            <div class="image-description" id="imageDescription2">富士山の桜</div>
+            <p>
+                <span class="bold bigsize">まず</span>、<span
+                    class="bold green">富士山</span>の圧倒的な美しさについて語ることができません。特に、初夏に咲く<span
+                    class="bold pink">桜の花</span>と共に<span
+                    class="bold green">富士山</span>を眺めることは、
+                    日本独特の風物詩として親しまれています。<span
+                    class="bold blue underline">山の頂上は一年を通じて雪に覆われており</span>、その姿はまさに壮観です。
+                登山者たちは、頂上からの景色を堪能するために多くの努力を惜しまないのです。
+            </p>
+            <button onclick="changeImage2()">もっと見る</button>
+
+            <hr />
+
+            <h2>#2</h2>
+            <img id="sceneryImage3" src="./pictures/6.jpg" alt="富士山の温泉">
+            <div class="image-description" id="imageDescription3">富士山の温泉</div>
+            <p>
+                <span
+                    class="bold bigsize">そして</span>、<span
+                    class="bold green">富士山</span>の周辺には、美しい湖や<span
+                    class="bold purple">温泉地</span>
+                が広がっています。その中でも<span
+                    class="bold blue">五湖（富士五湖）</span>と呼ばれる<span
+                    class="bold blue underline">河口湖、
+                    山中湖、西湖、本栖湖、浜名湖</span>は、<span
+                    class="bold green">富士山</span>の美しい姿を映し出す絶好のポイントです。これらの湖は、<span
+                    class="bold green">富士山</span>の景色を水面に映し出し、訪れる人々を楽しませています。
+                湖畔には様々なレジャーやアウトドア活動が楽しめる施設も充実しています。
+            </p>
+            <button onclick="changeImage3()">もっと見る</button>
+
+            <hr />
+
+            <h2>#3</h2>
+            <img id="sceneryImage4" src="./pictures/9.jpg" alt="富士山の伝統">
+            <div class="image-description" id="imageDescription4">富士山の伝統</div>
+            <p>
+                <span class="bold bigsize">また</span>、<span
+                    class="bold green">富士山</span>は日本の<span
+                    class="bold red">歴史と文化</span>
+                にも深く根ざしています。古くから日本人にとって信仰の対象であり、多くの<span
+                    class="bold red">宗教行事や祭り</span>が行われています。特に、<span
+                    class="bold red underline">夏に行われる富士山開きや富士登山の祭り</span>は、
+                多くの参加者で賑わい、日本の伝統を感じさせます。
+            </p>
+            <button onclick="changeImage4()">もっと見る</button>
+
+            <hr />
+
+            <h2><b><i>まとめ</i></b></h2>
+            <p>
+                <span
+                    class="bold bigsize">総じて</span>、<span
+                    class="bold green">富士山</span>とその周辺の<span
+                    class="bold blue">自然風景</span>は、日本の美しい<span
+                    class="bold red underline">風土を代表する</span>存在として、国内外の観光客に愛され続けています。
+                四季折々の美しい景色、豊かな自然、そして歴史的な背景が、訪れる人々に心に残る素晴らしい体験を提供しています。
+                自然愛好家、アウトドア愛好家、<span
+                    class="bold red underline">文化や歴史</span>に興味を持つ人々にとって、富士山とその周辺は必見の観光スポットとよく言われています。
+            </p>
+
+            <hr />
+
+            <h2><b><i>地図ナビゲーション</i></b></h2>
+            <span>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13015.197565360611!2d138.71706366444448!3d35.360624563075575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019629a42fdc899%3A0xa6a1fcc916f3a4df!2z5a-M5aOr5bGx!5e0!3m2!1sjp!2sjp!4v1707377826931!5m2!1sjp!2sjp"
+                    width="600" height="450" style="border:0;" allowfullscreen
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </span>
+
+        </div>
+
+    </body>
+</html>
